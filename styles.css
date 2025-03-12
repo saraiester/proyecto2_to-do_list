@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #app {
+    background: #2d2d2d; /* Fondo oscuro para el contenedor */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff; /* Texto blanco */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #task-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #3d3d3d; /* Fondo oscuro para el input */
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  #new-task::placeholder {
+    color: #999; /* Placeholder más claro */
+  }
+  
+  #search-task,
+  #search-task-id {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #3d3d3d; /* Fondo oscuro para los inputs */
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  #search-task::placeholder,
+  #search-task-id::placeholder {
+    color: #999; /* Placeholder más claro */
+  }
+  
+  button {
+    padding: 8px 12px; /* Botones más pequeños */
+    background-color: #3498db; /* Celeste */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Celeste más oscuro */
+  }
+  
+  #task-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .task-column {
+    width: 48%;
+    background-color: #3d3d3d; /* Fondo oscuro para las columnas */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .task-column h2 {
+    color: #ffffff; /* Texto blanco */
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .task-list-container {
+    max-height: 300px; /* Altura máxima para las listas */
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #2d2d2d; /* Fondo oscuro para las tareas */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  li.completed {
+    background: #1e3a5f; /* Celeste oscuro para tareas completadas */
+    border-color: #3498db; /* Borde celeste */
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 8px; /* Espacio entre botones */
+    margin-top: 10px;
+  }
+  
+  .task-buttons button {
+    padding: 6px 10px; /* Botones más pequeños */
+    font-size: 12px; /* Texto más pequeño */
+  }
+  
+  .task-buttons button.complete-button {
+    background-color: #27ae60; /* Verde */
+  }
+  
+  .task-buttons button.complete-button:hover {
+    background-color: #219653; /* Verde más oscuro */
+  }
+  
+  .task-buttons button.edit-button {
+    background-color: #f39c12; /* Naranja */
+  }
+  
+  .task-buttons button.edit-button:hover {
+    background-color: #e67e22; /* Naranja más oscuro */
+  }
+  
+  .task-buttons button.delete-button {
+    background-color: #e74c3c; /* Rojo */
+  }
+  
+  .task-buttons button.delete-button:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+  }
